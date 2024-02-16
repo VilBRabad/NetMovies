@@ -28,15 +28,8 @@ const userSchema = new Schema({
       trim: true
    },
    dateOfBirth: {
-      type: Date,
+      type: String,
       required: true
-   },
-   gender: {
-      type: String,
-      lowercase: true,
-   },
-   avatar: {
-      type: String,
    },
    watchHistory: [
       {
