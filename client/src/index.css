@@ -3,3 +3,46 @@
 @tailwind utilities;
 
 
+@layer base{
+    body{
+        @apply overflow-x-hidden;
+    }
+
+    /*Features*/
+    .feat{
+        @apply flex h-[35rem] items-center justify-between;
+    }
+    .feat .det{
+        @apply  flex flex-col w-[50%];
+    }
+    .feat .det .title{
+        @apply text-5xl font-bold;
+    }
+    .det .desc{
+        @apply text-2xl mt-4;
+    }
+    .feat .img{
+        @apply  h-[25rem] w-[30rem] bg-slate-500;
+    }
+
+    /* Questions */
+    .card{
+        @apply w-[70%] text-xl h-16 px-6 bg-gray-500/50 flex justify-between items-center;
+    }
+    .card .plus{
+        @apply text-4xl;
+    }
+
+    /* footer */
+    .option{
+        @apply flex flex-col;
+    }
+    .option span{
+        @apply cursor-pointer hover:text-white/80;
+    }
+    .line{
+        height: 2px;
+        width: 100%;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+    }
+}
