@@ -4,14 +4,14 @@ import languageLogo from "../images/language.svg";
 
 function Footer() {
   return (
-    <div id="footer" className="relative flex h-[16rem] justify-center bg-black text-gray-500">
+    <div id="footer" className="relative pt-8 pb-6 flex justify-center bg-black text-gray-500">
       <div className="container relative">
-        <div className="line absolute top-0"></div>
+        <div className="line max-md:w-[90%] absolute top-0"></div>
         
         <div className="pt-4">
             <span>Questions? Call 0000-000-0000</span>
         </div>
-        <div className="options mt-4 flex w-full justify-between">
+        <div className="options mt-4 flex flex-wrap gap-4 w-full justify-between">
             <div className="option">
                 <span>FQA</span>
                 <span>Invest Relations</span>

@@ -10,24 +10,30 @@
 
     /*Features*/
     .feat{
-        @apply flex h-[35rem] items-center justify-between;
+        @apply relative flex max-sm:h-[30rem] h-[35rem] max-md:mb-20 max-md:my-6 flex-wrap gap-2 max-md:justify-center items-center justify-between;
     }
     .feat .det{
-        @apply  flex flex-col w-[50%];
+        @apply  flex flex-col w-[50%] max-md:w-[80%] max-sm:w-[95%];
     }
     .feat .det .title{
-        @apply text-5xl font-bold;
+        @apply text-5xl font-bold max-sm:text-3xl;
     }
     .det .desc{
-        @apply text-2xl mt-4;
+        @apply text-2xl mt-4 ;
     }
     .feat .img{
-        @apply  h-[25rem] w-[30rem] bg-slate-500;
+        @apply  h-[30rem] w-[35rem] max-xl:h-[25rem] max-xl:w-[30rem] max-md:h-[10rem] max-md:h-[20rem] md:max-lg:h-[20rem] md:max-lg:w-[25rem];
     }
 
     /* Questions */
     .card{
-        @apply w-[70%] text-xl h-16 px-6 bg-gray-500/50 flex justify-between items-center;
+        @apply w-[70%] max-md:w-full min-h-[3.5rem] bg-gray-500/50 flex flex-col justify-between items-center;
+    }
+    .card .head{
+        @apply text-xl px-5 py-3 w-full flex justify-between items-center cursor-pointer transition hover:bg-gray-500/55;
+    }
+    .card .description{
+        @apply px-5 hidden text-lg py-4 bg-gray-500/40 transition -translate-y-16;
     }
     .card .plus{
         @apply text-4xl;
@@ -45,4 +51,13 @@
         width: 100%;
         background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
     }
+
+    .card .description.show{
+        @apply transition flex translate-y-0;
+    }
+
+    .container{
+        @apply max-xl:px-6;
+    }
+
 }
