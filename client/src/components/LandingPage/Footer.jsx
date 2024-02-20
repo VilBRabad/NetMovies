@@ -1,5 +1,5 @@
 import React from 'react'
-import languageLogo from "../images/language.svg";
+import languageLogo from "../../images/language.svg";
 
 
 function Footer() {

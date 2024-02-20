@@ -1,11 +1,11 @@
 import React from 'react'
-import tv from "../images/tv.png";
-import downloadImage from "../images/mobile-0819.jpg";
-import videoSource from  "../images/video-tv-in-0819.m4v";
-import stranger from "../images/boxshot.png";
+import tv from "../../images/tv.png";
+import downloadImage from "../../images/mobile-0819.jpg";
+import videoSource from  "../../images/video-tv-in-0819.m4v";
+import stranger from "../../images/boxshot.png";
 import { GoDownload } from "react-icons/go";
-import vikram from "../images/second-last.png";
-import kidImg from "../images/kid-img.png";
+import vikram from "../../images/second-last.png";
+import kidImg from "../../images/kid-img.png";
 
 function Features() {
   return (

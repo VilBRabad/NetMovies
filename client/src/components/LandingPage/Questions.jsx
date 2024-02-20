@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 function Questions() {
 
@@ -28,8 +29,7 @@ function Questions() {
             description: "The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space. Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see."
         },
     ]
-
-
+    
     const hideAnswer = (index, e)=>{
         const x = document.getElementsByClassName("show");
         // console.log(x);
@@ -82,7 +82,7 @@ function Questions() {
             <span className="text-xl text-center">Ready to watch? Enter your email to create or restart your membership.</span>
             <div className="mt-2 flex flex-wrap max-sm:gap-4 justify-center"> 
                 <input type="email" placeholder="Email Address" className="h-[3rem] w-[23rem] text-lg border rounded-[4px] border-gray-400 outline-0 px-4 mr-2 bg-gray-900/60" />
-                <button className="h-[3rem] w-[10rem] rounded-[4px] text-lg bg-brand">Get Started</button>
+                <Link to="/register"><button className="h-[3rem] w-[10rem] rounded-[4px] text-lg bg-brand hover:bg-brand/80">Get Started</button></Link>
             </div>
         </div>
       </div>
