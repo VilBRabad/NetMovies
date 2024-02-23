@@ -10,7 +10,7 @@ import kidImg from "../../images/kid-img.png";
 function Features() {
   return (
     <div id="features" className="w-screen h-auto flex justify-center text-white bg-black">
-      <div className="container h-auto">
+      <div className="container h-auto max-lg:max-w-[100%]">
         <div className="feat mt-40">
             <div className="det">
                 <span className="title">Enjoy on your TV</span>
@@ -19,14 +19,14 @@ function Features() {
             <div className="img relative">
               <img src={tv} alt=""  className="relative z-[6]"/>
               {/* <div className="absolute bg-slate-400 h-10 w-[10rem] z-10 top-0"></div> */}
-              <video className="absolute w-[75%] top-[18%] right-[12%] z-[4]" autoPlay playsInline muted loop>
+              <video className="absolute w-[75%] max-md:top-[26.5%]  top-[24%] right-[12%] z-[4]" autoPlay playsInline muted loop>
                 <source src={videoSource} type="video/mp4" />
               </video>
             </div>
         </div>
-        <div className="feat flex-wrap-reverse">
+        <div className="feat max-sm:flex-wrap-reverse">
             <div className="img relative flex items-center justify-center">
-              <img src={downloadImage} alt=""  className="z-[3] h-full w-full relative"/>
+              <img src={downloadImage} alt=""  className="z-[3] relative"/>
               <div className="absolute flex justify-between items-center bg-black/90 h-[6rem] w-[65%] border-2 border-gray-500 rounded-3xl w-full z-[5] bottom-10">
                 <div className="h-full flex items-center">
                   <img src={stranger} className="h-[80%] ml-4" alt="" />
@@ -49,12 +49,12 @@ function Features() {
                 <span className="desc">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</span>
             </div>
             <div className="img">
-              <img src={vikram} className="h-full w-full" alt="" />
+              <img src={vikram} className="" alt="" />
             </div>
         </div>
-        <div className="feat flex-wrap-reverse mb-4">
+        <div className="feat mb-4 max-sm:flex-wrap-reverse">
             <div className="img">
-              <img src={kidImg} className="h-full w-full" alt="" />
+              <img src={kidImg} className="" alt="" />
             </div>
             <div className="det">
                 <span className="title">Create profiles for kids</span>

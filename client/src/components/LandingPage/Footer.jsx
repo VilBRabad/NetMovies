@@ -6,8 +6,7 @@ function Footer() {
   return (
     <div id="footer" className="relative pt-8 pb-6 flex justify-center bg-black text-gray-500">
       <div className="container relative">
-        <div className="line max-md:w-[90%] absolute top-0"></div>
-        
+        <div className="line absolute w-[90vw] top-0"></div>
         <div className="pt-4">
             <span>Questions? Call 0000-000-0000</span>
         </div>

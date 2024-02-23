@@ -80,14 +80,14 @@ function Subsrcription() {
             <div className="cards gap-2 flex justify-center flex-wrap mt-6 w-full">
                 {
                     Subscriptions.map((item, index) => (
-                        <div key={index} id={index} className="sub-card" onClick={(e)=>selectPlan(e, index)}>
+                        <div  data-aos="fade-zoom-in" key={index} id={index} className="sub-card" onClick={(e)=>selectPlan(e, index)}>
                             <div className={`sm-card relative card${index + 1}`}>
                                 <p className="text-lg font-bold">{item.title}</p>
                                 <p className="text-xs font-semibold">{item.quality}</p>
                                 {
                                     plan === index
                                     ?
-                                    <IoIosCheckmarkCircle className="absolute right-2 text-xl bottom-2"/>
+                                    <IoIosCheckmarkCircle className="absolute right-2 text-[1.5rem] bottom-2"/>
                                     :<></>
                                 }
                             </div>
