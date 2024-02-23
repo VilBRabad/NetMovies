@@ -161,5 +161,18 @@
         scroll-behavior: smooth;
         background-color: black;
     }
-    
+
+    .card-gradient{
+        background: linear-gradient(to right, rgb(0, 0, 0), rgb(201, 0, 0), rgba(255, 255, 255, 0), rgb(227, 0, 0), rgb(0, 0, 0));
+    }
+    .shado{
+        box-shadow: 3px 3px 17px 6px black;
+    }
+    .movie-info{
+        /* text-shadow: 1px 1px 3px black; */
+    }
+
+    .remove-scroll::-webkit-scrollbar {
+        display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+    }
 }

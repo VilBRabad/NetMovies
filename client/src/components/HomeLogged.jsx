@@ -3,6 +3,9 @@ import Navbar from './Navbar'
 import { Routes, Route } from 'react-router-dom'
 import Home from './Home/Home'
 import Search from './Search/Search'
+import Movies from './Movies/Movies'
+import Mylist from './MyList/Mylist'
+import History from './History/History'
 
 function HomeLogged() {
   return (
@@ -12,6 +15,9 @@ function HomeLogged() {
         <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/search" element={<Search/>}/>
+            <Route path="/movies" element={<Movies/>}/>
+            <Route path="/my-list" element={<Mylist/>}/>
+            <Route path="/history" element={<History/>}/>
         </Routes>
     </div>
   )

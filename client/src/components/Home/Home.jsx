@@ -142,7 +142,7 @@ function Home() {
           <div className="flex gap-2 max-md:overflow-x-scroll">
             {
               popularMovieData.map((post, index) => (
-                <img src={post.poster} 
+                <img key={index} src={post.poster} 
                 className={`h-[8rem] w-[12rem] ${index===indx?"border-4":""}`} alt=""  
                 onClick={()=>
                   setIndx(index)

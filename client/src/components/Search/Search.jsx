@@ -16,12 +16,12 @@ function Search() {
 
     return (
         <div className="h-screen w-screen text-white">
-            <div className="ml-[8rem]">
-                <div className="search flex items-center gap-2 mt-6 ml-20">
+            <div className="md:ml-[8rem] max-md:mt-[5rem]">
+                <div className="search flex items-center gap-2 ml-4 mt-6 md:ml-20">
                     <input type="text" className="h-[2.5rem] w-[20rem] text-lg rounded-[1.2rem] outline-0 px-4 bg-white/20 border-2 border-gray-300" placeholder="Search movies, series..." />
                     <IoSearchOutline className="text-3xl text-gray-400 hover:text-white cursor-pointer font-bold" />
                 </div>
-                <div className="res mt-20">
+                <div className="res max-md:ml-4 mt-20">
                     {
                         found?
                         <>
@@ -33,7 +33,7 @@ function Search() {
                         </div>
                         <div className="recomend mt-6">
                             <p className="mb-2 text-white/70 text-lg font-semibold">Recommeded</p>
-                            <div className="flex gap-4 max-md:overflow-x-scroll">
+                            <div className="flex gap-4 flex-wrap">
                                 <img src={karan} className="h-[8rem] w-[12rem]" alt="" />
                                 <img src={zanjeer} className="h-[8rem] w-[12rem]" alt="" />
                                 <img src={deewaar} className="h-[8rem] w-[12rem]" alt="" />
