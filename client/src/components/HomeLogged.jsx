@@ -9,6 +9,7 @@ import History from './History/History'
 import PageNotFound from './PageNotFound'
 import Account from './Account/Account'
 import { Link } from 'react-router-dom'
+import WatchNow from './Watch/WatchNow'
 
 function HomeLogged() {
   return (
@@ -22,6 +23,7 @@ function HomeLogged() {
             <Route path="/my-list" element={<Mylist/>}/>
             <Route path="/history" element={<History/>}/>
             <Route path="/account" element={<Account/>}/>
+            <Route path="/sholay" element={<WatchNow/>}/>
             <Route path="/:path" element={<PageNotFound/>}/>
         </Routes>
     </div>

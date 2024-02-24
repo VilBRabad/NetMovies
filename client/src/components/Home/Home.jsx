@@ -15,6 +15,7 @@ import jis_des_me_ganga_rehta_h from "../../images/MoviesPosters/jis_des_me_gang
 import judge_mujrim from "../../images/MoviesPosters/judge_mujrim.jpg"
 
 import { motion } from "framer-motion";
+import {Link} from "react-router-dom";
 
 function Home() {
 
@@ -133,7 +134,7 @@ function Home() {
             </div>
           </div>
           <div className="flex gap-4 mt-3">
-            <button className="bg-brand h-[2.4rem] w-[9rem] rounded-sm hover:bg-brand/80">Watch Now</button>
+            <Link to="./sholay"><button className="bg-brand h-[2.4rem] w-[9rem] rounded-sm hover:bg-brand/80">Watch Now</button></Link>
             <div className="flex flex-col items-center cursor-pointer">
               <FaPlus className="text-xl" />
               <span className="text-xs">My List</span>

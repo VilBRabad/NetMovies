@@ -124,13 +124,13 @@ function Movies() {
                             </>
                             :
                             <>
-                                <div className="h-[15rem] w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
-                                <div className="h-[15rem] w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
-                                <div className="h-[15rem] w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
-                                <div className="h-[15rem] w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
-                                <div className="h-[15rem] w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
-                                <div className="h-[15rem] w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
-                                <div className="h-[15rem] w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
+                                <div className="h-[15rem] min-w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
+                                <div className="h-[15rem] min-w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
+                                <div className="h-[15rem] min-w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
+                                <div className="h-[15rem] min-w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
+                                <div className="h-[15rem] min-w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
+                                <div className="h-[15rem] min-w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
+                                <div className="h-[15rem] min-w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
                             </>
                         }
                     </div>
@@ -181,13 +181,13 @@ function Movies() {
                             </>
                             :
                             <>
-                                <div className="h-[15rem] w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
-                                <div className="h-[15rem] w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
-                                <div className="h-[15rem] w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
-                                <div className="h-[15rem] w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
-                                <div className="h-[15rem] w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
-                                <div className="h-[15rem] w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
-                                <div className="h-[15rem] w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
+                                <div className="h-[15rem] min-w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
+                                <div className="h-[15rem] min-w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
+                                <div className="h-[15rem] min-w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
+                                <div className="h-[15rem] min-w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
+                                <div className="h-[15rem] min-w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
+                                <div className="h-[15rem] min-w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
+                                <div className="h-[15rem] min-w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
                             </>
                         }
                     </div>
@@ -209,13 +209,13 @@ function Movies() {
                             </>
                             :
                             <>
-                                <div className="h-[15rem] w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
-                                <div className="h-[15rem] w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
-                                <div className="h-[15rem] w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
-                                <div className="h-[15rem] w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
-                                <div className="h-[15rem] w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
-                                <div className="h-[15rem] w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
-                                <div className="h-[15rem] w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
+                                <div className="h-[15rem] min-w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
+                                <div className="h-[15rem] min-w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
+                                <div className="h-[15rem] min-w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
+                                <div className="h-[15rem] min-w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
+                                <div className="h-[15rem] min-w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
+                                <div className="h-[15rem] min-w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
+                                <div className="h-[15rem] min-w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
                             </>
                         }
                     </div>
