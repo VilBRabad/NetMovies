@@ -13,10 +13,6 @@ const videoSchema = new Schema({
       type: String,
       required: true,
    }, 
-   backImage: {
-      type: String,
-      required: true
-   },
    duration: {
       type: String
    }, 
@@ -27,7 +23,6 @@ const videoSchema = new Schema({
    genre: [
       {
          type: String,
-         lowercase: true
       }
    ], 
    actors: [

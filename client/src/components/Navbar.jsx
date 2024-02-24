@@ -32,7 +32,7 @@ function Navbar() {
         <Link to="./movies"><LuClapperboard className="hover:text-white cursor-pointer" onClick={()=>setPos(220)}/></Link>
         <Link to="./my-list"><FaPlus className="hover:text-white cursor-pointer" onClick={()=>setPos(340)}/></Link>
         <Link to="./history"><GoHistory className="hover:text-white cursor-pointer" onClick={()=>setPos(460)}/></Link>
-        <FaRegCircleUser className="hover:text-white cursor-pointer" onClick={()=>setPos(570)}/>
+        <Link to="./account"><FaRegCircleUser className="hover:text-white cursor-pointer" onClick={()=>setPos(570)}/></Link>
       </div>
     </div>
   )

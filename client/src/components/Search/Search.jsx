@@ -1,14 +1,12 @@
 import React, { useState } from 'react'
 import { IoSearchOutline } from "react-icons/io5";
-import deewaar from "../../images/MoviesPosters/Deewaar.jpg"
-import dilwale from "../../images/MoviesPosters/dilwale.jpg"
-import zanjeer from "../../images/MoviesPosters/zanjeer2.jpg"
-import jani from "../../images/MoviesPosters/jani.jpg"
-import karan from "../../images/MoviesPosters/karan.jpg"
-import sainik from "../../images/MoviesPosters/sainik.jpg"
-import lahoo from "../../images/MoviesPosters/lahu-ke-do-rang-film_orig.jpg"
+import jani_dushman from "../../images/MoviesPosters/jani_dushman.jpg"
 import sholay from "../../images/MoviesPosters/sholay.jpg"
-import judge from "../../images/MoviesPosters/judge.jpg"
+import dhadkan from "../../images/MoviesPosters/dhadkan.jpg"
+import dilwale from "../../images/MoviesPosters/dilwale.jpg"
+import vishwatma from "../../images/MoviesPosters/vishwatma.jpg"
+import nayak from "../../images/MoviesPosters/nayak.jpg"
+
 
 function Search() {
 
@@ -28,18 +26,19 @@ function Search() {
                         <div>
                             <p className="mb-2 text-white/70 text-lg font-semibold">Search Result for "Deewaar"</p>
                             <div className="flex gap-2 max-md:overflow-x-scroll">
-                                <img src={deewaar} className="h-[8rem] w-[12rem]" alt="" />
+                                <img src={sholay} className="h-[15rem] w-[11rem]" alt="" />
                             </div>
                         </div>
                         <div className="recomend mt-6">
                             <p className="mb-2 text-white/70 text-lg font-semibold">Recommeded</p>
                             <div className="flex gap-4 flex-wrap">
-                                <img src={karan} className="h-[8rem] w-[12rem]" alt="" />
-                                <img src={zanjeer} className="h-[8rem] w-[12rem]" alt="" />
-                                <img src={deewaar} className="h-[8rem] w-[12rem]" alt="" />
-                                <img src={lahoo} className="h-[8rem] w-[12rem]" alt="" />
-                                <img src={dilwale} className="h-[8rem] w-[12rem]" alt="" />
-                                <img src={judge} className="h-[8rem] w-[12rem]" alt="" />
+                                <img src={jani_dushman} className="h-[15rem] w-[11rem]" alt="" />
+                                <img src={sholay} className="h-[15rem] w-[11rem]" alt="" />
+                                <img src={dhadkan} className="h-[15rem] w-[11rem]" alt="" />
+                                <img src={vishwatma} className="h-[15rem] w-[11rem]" alt="" />
+                                <img src={dilwale} className="h-[15rem] w-[11rem]" alt="" />
+                                <img src={nayak} className="h-[15rem] w-[11rem]" alt="" />
+                                <img src={sholay} className="h-[15rem] w-[11rem]" alt="" />
                             </div>
                         </div>
                         </>

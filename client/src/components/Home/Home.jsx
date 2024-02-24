@@ -1,14 +1,19 @@
 import React, { useEffect, useState } from 'react'
 import { FaPlay, FaPlus } from "react-icons/fa6";
-import deewaar from "../../images/MoviesPosters/Deewaar.jpg"
-import dilwale from "../../images/MoviesPosters/dilwale.jpg"
-import zanjeer from "../../images/MoviesPosters/zanjeer2.jpg"
-import jani from "../../images/MoviesPosters/jani.jpg"
-import karan from "../../images/MoviesPosters/karan.jpg"
-import sainik from "../../images/MoviesPosters/sainik.jpg"
-import lahoo from "../../images/MoviesPosters/lahu-ke-do-rang-film_orig.jpg"
+import jani_dushman from "../../images/MoviesPosters/jani_dushman.jpg"
 import sholay from "../../images/MoviesPosters/sholay.jpg"
-import judge from "../../images/MoviesPosters/judge.jpg"
+import dhadkan from "../../images/MoviesPosters/dhadkan.jpg"
+import dilwale from "../../images/MoviesPosters/dilwale.jpg"
+import vishwatma from "../../images/MoviesPosters/vishwatma.jpg"
+import nayak from "../../images/MoviesPosters/nayak.jpg"
+
+import baazigar from "../../images/MoviesPosters/baazigar.jpg"
+import hum_he_bemisal from "../../images/MoviesPosters/hum_he_bemisal.jpg"
+import ishq from "../../images/MoviesPosters/ishq.jpg"
+import janvar from "../../images/MoviesPosters/janvar.jpg"
+import jis_des_me_ganga_rehta_h from "../../images/MoviesPosters/jis_des_me_ganga_rehta_h.jpg"
+import judge_mujrim from "../../images/MoviesPosters/judge_mujrim.jpg"
+
 import { motion } from "framer-motion";
 
 function Home() {
@@ -26,37 +31,37 @@ function Home() {
       description: "Dilwale is a 1994 Indian Hindi-language romantic action film starring Ajay Devgn, Sunil Shetty, Raveena Tandon and Paresh Rawal. Originally Divya Bharti signed for the lead, but due to her sudden demise, she was replaced by Tandon...."
     },
     {
-      poster: zanjeer,
-      title: "Zanjeer",
+      poster: jani_dushman,
+      title: "Jaani Dushman: Ek Anokhi Kahani",
       year: "1973",
       qaulity: "HD",
-      rating: "7.5",
+      rating: "2.7",
       category: [
-        "Action", "Crime", "Drama", "Thriller"
+        "Action", "Crime", "Horror", "Thriller"
       ],
       description: "A young Vijay Khanna witnesses the murder of his parents committed by a man of unknown identity with a white horse on his charm bracelet Zanjeer. Due to this traumatic event, Vijay has recurring nightmares of a white stallion...."
     },
     {
-      poster: jani,
-      title: "Jaani Dushman",
+      poster: dhadkan,
+      title: "Dhadkan",
       year: "1979",
       qaulity: "Full HD",
-      rating: "8.1",
+      rating: "6.5",
       category: [
-        "Action", "Rommance", "Horror", "Mystery"
+        "Action", "Rommance"
       ],
-      description: "Divya and Karan Saxena are in love and engaged. Karan has a younger step-brother, Vivek, whom he looks after as if he was his brother. Divya and Vivek study in the same college as their best-friends group....."
+      description: "Anjali Chauhan Verma (Shilpa Shetty) is the only daughter of a wealthy businessman in love with Dev Chopra (Suniel Shetty). Dev is of humble means but Anjali's father reluctantly agrees to meet him. However he rejects Dev for apparent rudeness and uncivilized behavior....."
     },
     {
-      poster: deewaar,
-      title: "Deewaar",
+      poster: vishwatma,
+      title: "Vishwatma",
       year: "1975",
       qaulity: "HD",
-      rating: "8",
+      rating: "6.5",
       category: [
-        "Action", "Crime", "Drama", "Thriller"
+        "Action", "Thriller"
       ],
-      description: "Deewaar is a 1975 Indian action crime drama film written by Salim–Javed and directed by Yash Chopra. Released worldwide on 24 January 1975, the film stars an ensemble cast of Shashi Kapo...."
+      description: "Prabhat Singh is an honest and dedicated police officer, but he usually has no time for his family and due to this, his father is constantly at loggerheads with him. Prabhat's father believes in peace and opposes violence....."
     },
     {
       poster: sholay,
@@ -65,20 +70,20 @@ function Home() {
       qaulity: "Full HD",
       rating: "8.1",
       category: [
-        "Action", "Adventure", "Drama", "Comedy"
+        "Action", "Adventure", "Drama",
       ],
       description: "Jai and Veeru are small-time crooks who are released from prison, where they are recruited by a as the duo had saved Thakur from a train robbery which makes Thakur to recruit them for the mission with an additional ₹20,000 reward....."
     },
     {
-      poster: sainik,
-      title: "Sainik",
-      year: "1993",
+      poster: nayak,
+      title: "Nayak",
+      year: "2001",
       qaulity: "Full HD",
-      rating: "6",
+      rating: "7.8",
       category: [
-        "Action", "Rommance", "Drama"
+        "Action", "Thriller"
       ],
-      description: "This movie is about army officer Suraj Dutt, who is the son of Yashpal Dutt. Suraj goes to meet his sister Minni at a women's college before he falls in love with Alka. They soon get married, but Suraj is called for a year-long mission...."
+      description: "Shivaji Rao Gaekwad is an ambitious television cameraman, working for QTV along with his friend Topi. While on his job, Rao is assigned to record riots triggered by a fight between college students and a bus driver and accidentally records a conversation in which the Chief Minister of Maharashtra Balraj Chauhan takes an indifferent stand, so as not to lose his voter base....."
     },
   ]
 
@@ -100,6 +105,7 @@ function Home() {
     imageSlider.style.backgroundPosition = "center";
   }, [indx])
 
+  const [found, setFound] = useState(true);
 
   return (
     <>
@@ -140,35 +146,56 @@ function Home() {
         <div className="popular text-white">
           <p className="mb-2 text-lg font-semibold">Popular on NetMovies</p>
           <div className="flex gap-2 max-md:overflow-x-scroll">
-            {
+            { 
+              found?
               popularMovieData.map((post, index) => (
                 <img key={index} src={post.poster} 
-                className={`h-[8rem] w-[12rem] ${index===indx?"border-4":""}`} alt=""  
+                className={`h-[15rem] w-[11rem] ${index===indx?"border-4":""}`} alt=""  
                 onClick={()=>
                   setIndx(index)
                 }/>
               ))
+              :
+              <>
+                <div className="h-[15rem] w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
+                <div className="h-[15rem] w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
+                <div className="h-[15rem] w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
+                <div className="h-[15rem] w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
+                <div className="h-[15rem] w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
+                <div className="h-[15rem] w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
+                <div className="h-[15rem] w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
+              </>
             }
           </div>
         </div>
         <div className="text-white mt-4">
+          {
+            found?
+            <>
+              <p className="mb-2 text-lg font-semibold">People also like</p>
+              <div className="flex gap-2 max-md:overflow-x-scroll">
+                <img src={baazigar} className="h-[15rem] w-[11rem]" alt="" />
+                <img src={hum_he_bemisal} className="h-[15rem] w-[11rem]" alt="" />
+                <img src={ishq} className="h-[15rem] w-[11rem]" alt="" />
+                <img src={janvar} className="h-[15rem] w-[11rem]" alt="" />
+                <img src={jis_des_me_ganga_rehta_h} className="h-[15rem] w-[11rem]" alt="" />
+                <img src={judge_mujrim} className="h-[15rem] w-[11rem]" alt="" />
+              </div>
+            </>
+            :
+            <>
             <p className="mb-2 text-lg font-semibold">People also like</p>
-            <div className="flex gap-2 max-md:overflow-x-scroll">
-              <img src={zanjeer} className="h-[8rem] w-[12rem]" alt="" />
-              <img src={judge} className="h-[8rem] w-[12rem]" alt="" />
-              <img src={lahoo} className="h-[8rem] w-[12rem]" alt="" />
-              <img src={karan} className="h-[8rem] w-[12rem]" alt="" />
-              <img src={dilwale} className="h-[8rem] w-[12rem]" alt="" />
-              <img src={deewaar} className="h-[8rem] w-[12rem]" alt="" />
+            <div className="flex gap-2">
+                <div className="h-[15rem] w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
+                <div className="h-[15rem] w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
+                <div className="h-[15rem] w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
+                <div className="h-[15rem] w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
+                <div className="h-[15rem] w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
+                <div className="h-[15rem] w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
+                <div className="h-[15rem] w-[11rem] rounded-md animate-pulse bg-gray-400"></div>
             </div>
-            <div className="flex gap-2 mt-3 max-md:overflow-x-scroll">
-              <img src={karan} className="h-[8rem] w-[12rem]" alt="" />
-              <img src={zanjeer} className="h-[8rem] w-[12rem]" alt="" />
-              <img src={deewaar} className="h-[8rem] w-[12rem]" alt="" />
-              <img src={lahoo} className="h-[8rem] w-[12rem]" alt="" />
-              <img src={dilwale} className="h-[8rem] w-[12rem]" alt="" />
-              <img src={judge} className="h-[8rem] w-[12rem]" alt="" />
-            </div>
+            </>
+          }
         </div>
       </div>
     </>

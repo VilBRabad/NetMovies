@@ -1,0 +1,269 @@
+video{
+  id 
+  title 
+  description 
+  poster 
+  duration 
+  rating 
+  genre []
+  actors Object[]
+  releaseDate 
+  createdAt 
+  updatedAt 
+}
+
+1. Jaani Dushman: Ek Anokhi Kahani
+    description: Two wishful serpents, Kapil (Armaan Kohli) and Vasundhara (Manisha Koirala) keep loving each other. One day, due to his mistake, the penance of a monk is disturbed, due to which he curses in anger, due to which Vasundhara dies with the sunset in the evening. Kapil apologizes to the monk and seeing his efforts, he tells him that Vasundhara's next birth will happen after many years.
+
+    poster: {}
+    duration: 2h 59m
+    rating: 2.7
+    genre: Action, Horror
+    actors: Akshay Kumar, Sunil Shetty, Armaan Kohli, Sunny Deol, Sonu Nigam, Jonny Lever, Arshad warsi
+
+    releaseDate: 16 August 2002,
+
+2. Sholay
+    description: Jai and Veeru are small-time crooks who are released from prison, where they are recruited by a former Inspector Thakur Baldev Singh to capture a notorious dacoit named Gabbar Singh wanted for ₹50,000,[b] as the duo had saved Thakur from a train robbery which makes Thakur to recruit them for the mission with an additional ₹20,000 reward. The duo leave for Thakur's village in Ramgarh, where Gabbar is residing and terrorizing the villagers.
+
+    poster: {}
+    duration: 3h 24m
+    rating: 8.1
+    genre: Action, Adventure
+    actors: Amitabh Bachchan, Dharmendra, Amjad Khan, Hema Malini, Sanjeev Kumar, Jaya Bachchan
+    releaseDate: 15 August 1975
+
+3. Dhadkan
+    description: Anjali Chauhan Verma (Shilpa Shetty) is the only daughter of a wealthy businessman in love with Dev Chopra (Suniel Shetty). Dev is of humble means but Anjali's father reluctantly agrees to meet him. However he rejects Dev for apparent rudeness and uncivilized behavior. An attempt to elope with Dev is foiled. Her father emotionally manipulates her into an agreement to marry Ram Verma (Akshay Kumar) a man chosen by him. Dev is left heartbroken.
+
+    duration: 2h 41m
+    rating: 6.5
+    genre: Rommance, Action
+    actors: Akshay Kumar, Sunil Shetty, Shilpa Shetty, Mahima Chaudhry
+    releaseDate: 11 August 2000
+
+4. Dilwale
+    description: Arun Saxena is detained in a mental hospital. He attempts to escape but is stopped by the doctors. Arun's mother, Jamuna, sits in front of a temple every day with her back turned to God, vowing to only face God when Arun returns.
+
+    duration: 3h 00m
+    rating: 5.6
+    genre: Action, Rommance
+    actors: Ajay Devgn, Sunil Shetty, Raveena Tandon, Paresh Raval, Gulshan Grover
+    releaseDate: 4 February 1994
+
+5. Vishwatma
+    description: Prabhat Singh is an honest and dedicated police officer, but he usually has no time for his family and due to this, his father is constantly at loggerheads with him. Prabhat's father believes in peace and opposes violence. Prabhat is now placed on a mission to apprehend the most dreaded crime Lord, Ajgar Jurrat, who currently lives in Kenya but operates in India. Ajgar has a rivalry with another Crime Lord, Madan Bharadwaj.
+
+    duration: 3h 1m
+    rating: 6.5
+    genre: Action, Thriller,
+    actors: Naseeruddin Shah, Sunny Deol, Divya Bharti, Chunki Panday
+    releaseDate: 24 January 1992
+
+6. Nayak
+    description: Shivaji Rao Gaekwad is an ambitious television cameraman, working for QTV along with his friend Topi. While on his job, Rao is assigned to record riots triggered by a fight between college students and a bus driver and accidentally records a conversation in which the Chief Minister of Maharashtra Balraj Chauhan takes an indifferent stand, so as not to lose his voter base. In the riots, Shivaji saves the life of one of the college students there, and it is recorded by Topi. Because of his actions, Shivaji is promoted as the senior television presenter.
+
+    duration: 3h 7m
+    rating: 7.8
+    genre: Action, Thriller
+    actors: Anill Kapoor, Rani Mukerji, Amrish Puri, Paresh Raval, Jonny Lever, Sushmita sen
+    releaseDate: 7 September 2001
+
+7. Ishq
+    description: Ranjit Rai and Harbans Lal Saxena are two wealthy businessmen who despise the poor. However, Ranjit's son Ajay meets with his childhood friend Raja, a poor mechanic; while Harbans's daughter, Madhu is good friends with Kajal, who is also poor. They fix up Ajay's marriage with Madhu by getting their signatures on a marriage certificate by deceit and without their knowledge; and send Ajay to meet Madhu at Harbans's place in Ooty. 
+
+    duration: 2h 48m
+    rating: 6.8
+    genre: Comedy, Romance
+    actors: Aamir Khan, Ajay Devgn, Juhi Chawla, Kajol, Jonny Lever
+    releaseDate: 28 November 1997
+
+8. Jis Desh Mein Ganga Rehta Hain
+    description: When the time for Ganga's marriage comes, her parents inform her that her real parents live in the city. They now want him to settle there. Ganga bids a tearful farewell to her fellow villagers and travels to the town where her biological parents live. There he meets his elder brother. 
+
+    duration: 2h 21m
+    rating: 4.9
+    genre: Comedy, Rommance,
+    actors: Govinda, Sonali Bendre, Shakti Kapoor
+    releaseDate: 13 October 2000 
+
+9. Koyla
+    duration: Handsome but mute, Shankar is raised by the powerful Raja, to whom he is loyal. But he treats him like a slave. Shankar is also unnecessarily beaten by Raja's brother Brijwa, a violent psychopath. A ruthless and cruel man with a large appetite for young women, Raja kills anyone who dares to defy him.
+
+    duration: 2h 46m
+    rating: 6.2
+    genre: Action, Thriller, Crime, Adventure
+    actors:  Shah Rukh Khan, Madhuri Dixit, Amrish Puri, Johnny Lever, Ashok Saraf
+    releaseDate: 7 April 1997
+
+10. Saajan
+    duration: Rajiv Verma, a wealthy businessman adopts Aman, a boy who has a disability. Rajiv's wife, Kamla and their own son, Akash also accept Aman as their son and elder brother.
+
+    duration: 3h 2m
+    rating: 7.2
+    genre: Rommance, Musical
+    actors:  Sanjay Dutt, Madhuri Dixit, Salman Khan, Kader Khan
+    releaseDate: 30 August 1991
+
+11. Suhaag
+    description: The story is about Ajay Sharma and Raj Sinha who are best friends studying in the same college. Pooja and Madhu are their respective girlfriends. Raj is from a rich family. He stays with his uncle as his father lives in another town. Ajay Sharma lives in Bombay with his widowed mother Asha. Raj treats Ajay's mother as his own mother and they share a brotherly relationship. 
+
+    duration: 2h 42m
+    rating: 5.7
+    genre: Action, Drama, Thriller
+    actors: Akshay Kumar, Ajay Devgn, Karisma Kapoor, Nagma 
+    releaseDate: 20 October 1994
+
+12. Raja Hindustani
+    description: Aarti Sehgal is a beautiful young girl. Her evil stepmother Shalini wants to gain her father Bakshrath's wealth. Aarti arrives in Palankhet for a vacation to discover memories of her late mother and hires the services of available driver, Raja Hindustani. Ultimately, they bond and fall in love after an accidental passionate romantic kiss. 
+
+    duration: 2h 45m
+    rating: 6.1
+    genre: Action, Romance
+    actors: Aamir Khan, Karisma Kapoor
+    releaseDate: 15 November 1996
+
+13. Sailaab
+    description: Dr. Sushma Malhotra (Madhuri Dixit) treats her patient; a kind thief and killer (Aditya Pancholi), who has lost his memory in an accident. She renames him Krishna. For the care she takes, Krishna falls in love with her and then they get married. Soon after they are married however, Inspector Ranjeet Kapoor (Suresh Oberoi) warns her that her husband was set to kill her before his accident and may again attempt to kill her, but she disregards this.
+
+    duration: 2h 9m
+    rating: 5
+    genre: Drama, Thriller
+    actors: Aditya Pancholi, Madhuri Dixit
+    releaseDate: 31 August 1990
+
+14. Mela
+    description: Roopa Singh is the only sister of her soldier brother named Ram Singh who returns to her village in Chandanpur to arrange her marriage in the form of a carnival. However, Roopa's happiness is short-lived as the village is raided by a group of terrorists led by Gujjar Singh, who murders a visiting politician and is attracted to Roopa.
+
+    duration: 2h 43m
+    rating: 3.7
+    genre: Action, Rommance
+    actors: Aamir Khan, Twinkle Khanna, Faisal Khan
+    releaseDate: 7 January 2000
+
+15. Aag
+    description: Orphaned at a very young age, Raju lives a poor lifestyle with his unmarried sister, Laxmi, in India. Both are of marriageable age. One day Raju meets an attractive fellow-collegian, Parul, and after a few encounters with another fellow-collegian, Bobby, both fall in love. But Parul's uncle, Jagpal, has already arranged her marriage with Police Inspector Suryadev Singh.
+
+    duration: 2h 31m
+    rating: 4.6
+    genre: Action, Mystery
+    actors: Govinda, Shilpa Shetty
+    releaseDate: 12 August 1994
+
+16. Hum hai Bemisaal
+    description: Tuti Shah murders Kishan to defend his anti-social business and frames Kishan's friend D'Souza for his murder. D'Souza gets life imprisonment. D'Souza's seven-year-old son Michael runs away in frustration when his best friend and Kishan's son Vijay Sinha also expels him for being the son of his father's murderer. Time passes. 
+
+    duration: 1h 54m
+    rating: 4.4
+    genre: Action, Thriller
+    actors: Sunil Shetty, Akshay Kumar
+    releaseDate: 16 December 1994
+
+17. Judge Mujrim
+    description: Judge Pratap Sinha (Jeetendra) is a renowned judge who does not pass judgement by sitting down on the judge's chair, but he himself investigates and brings the criminals to their fate. His wife, Sujata (Sujata Mehta), is a famous lawyer. He also has a sister Ashwini, (Ashwini Bhave), a brave police officer.
+
+    duration: 2h 12m
+    rating: 4.1
+    genre: Action, Drama
+    actors: Jeetendra, Sunil Shetty, Ashwini Bhave
+    releaseDate: 12 September 1997
+
+18. Kanoon
+    description: Kanoon (transl. The law) is a 1994 Indian Hindi-language film directed and produced by Sushma Shiromani under her own productions Shiromani Chitra and starring Ajay Devgan, Urmila Matondkar in lead roles.
+
+    duration: 2h 32m
+    rating: 3.4
+    genre: Action, Thriller
+    actors: Ajay Devgan, Urmila Matondkar, Gulshan Grover, Jonny Lever
+    releaseDate: 1 April 1994
+
+19. Karan Arjun
+    description: In a village in Rajasthan, Durga Singh, a poor woman raises her two beloved sons Karan and Arjun. When Munshiji of Thakur Sangram Singh, comes to talk to Durga, she tells her husband was the Thakur's son who married her against his father's wishes. Durjan Singh, a relative of Thakur killed Durga's husband to prevent him or his family from inheriting the Thakur's estate.
+
+    duration: 2h 55m
+    rating: 6.8
+    genre: Action, Drama, Thriller
+    actors:  Salman Khan, Shah Rukh Khan, Raakhee Gulzar, Mamta Kulkarni, Kajol, Amrish Puri, Johnny Lever
+    releaseDate: 13 January 1995
+
+20. Sainik
+    description: The film is about a soldier named Lieutenant Suraj Dutt (Akshay Kumar), who is Colonel Yashpal Dutt (Retd) (Anupam Kher) is the son of Suraj goes to meet his sister Mini in the women's college where he meets Alka (Ashwini Bhave) and they fall in love with each other. They soon get married, but Suraj is called on a mission for a year.
+
+    duration: 2h 28m
+    rating: 6.0
+    genre: Action, Drama
+    actors: Akshay Kumar, Ashwini Bhave, Ronit Roy, Anupam Kher, Farheen
+    releaseDate: 10 September 1993
+
+21. Satranj
+    description: Shatranj is the story of three brothers Dharamraj (Kader Khan), Dinky (Mithun Chakraborty) and Dino (Jackie Shroff). Dharamraj runs a garage with his two younger brothers and has remained a bachelor all his life as he hates women. He also forbids his brothers from falling in love and getting married. Tension between the brothers arises when Dinky and Dino meet and fall in love with Radha (Juhi Chawla) and Renu (Divya Bharti).
+
+    duration: 2h 20m
+    rating: 5.3
+    genre: Romance, Comedy
+    actors: Mithun Chakraborty, Jackie Shroff, Kader Khan, Juhi Chawla, Divya Bharti, Shakti Kapoor, Kader Khan
+    releaseDate: 17 December 1993
+
+22. Ajnabi
+    description: Raj and Priya Malhotra move to Switzerland, where they meet their Indian neighbors, Vikram and Sonia Bajaj. All of them quickly become friends and go on a Christmas vacation together to Mauritius.
+
+    duration:  2h 45m
+    rating: 6.3
+    genre: Action, Thriller
+    actors:  Akshay Kumar, Bobby Deol, Kareena Kapoor, Bipasha Basu, Johnny Lever, Dalip Tahil
+    releaseDate: 21 September 2001
+
+23. Baazigar
+    description: Seema and Priya are the two daughters of affluent businessman Madan Chopra. Chopra competes in an auto race in Madras only to discover that another competitor, Vicky Malhotra, let him win on purpose so that he could meet him. Vicky impresses Chopra, and Priya develops feelings for him.
+
+    duration: 3h 2m
+    rating: 7.6
+    genre: Thriller, Rommance
+    actors:  Shahrukh Khan, Kajol, Shilpa Shetty, Dalip Tahil, Johnny Lever
+    releaseDate: 12 November 1993
+
+24. Jaanwar
+    description: Orphaned when his mother dies of starvation, Babu is taken in by Sultan, an ambitious local criminal. Sultan has gathered a group of boys, led by his nephew Abdul, who he trains to work for him. Babu grows up to become "Badshah (Akshay Kumar) a professional criminal working for Sultan. After having robbed a jewellery store, Badshah and Abdul are chased by police but manage to escape
+
+    duration: 3h 7m
+    rating: 5.9
+    genre: Action, Drama, Thriller
+    actors:  Akshay Kumar, Karisma Kapoor, Shilpa Shetty, Shakti Kapoor
+    releaseDate: 24 December 1999
+
+25. Loha
+    description: The movie begins with the introduction to a powerful underworld Don, Lukka (Mohan Joshi). He has a stake in all illegal activities like weapon smuggling, drugs, and land encroachment. Lukka's sidekicks include Salim Chikna (Harish Patel), Takla (Rami Reddy), muscleman Babu Batla (Bajrangi), and Munna Mobile (Razzak Khan).
+
+    duration: 2h 40m
+    rating: 5.2
+    genre: Action, Drama
+    actors:  Dharmendra, Mithun Chakraborty, Shakti Kapoor, Govinda 
+    releaseDate: 17 October 1997 
+
+26. VIrana
+    description: Priests surround a young boy tied up inside a cage in a cave. He pleads with them to spare him and asks what they want from him. A priest says that his blood and flesh will give life to Nakita. Just then a lovely young woman enters the cage. She removes the bat locket from her neck, transforms into a witch and kills the boy.
+
+    duration: 2h 25m
+    rating: 6.6
+    genre: Action, Horror
+    actors: Jasmin Dhunna, Hemant Birje, Sahila Chadha
+    releaseDate: 6 May 1988
+
+27. 1920
+    description: In 1920 India, Arjun Singh Rathod is a well-known architect who has gone against his wealthy Hindu family's wishes to marry a half caste British Indian girl – Lisa. His family ambush his car en route to Bombay, assaulting him badly and setting the car on fire in an attempt to kill Lisa. Due to this, Arjun, once a deeply religious and devout Hindu, shuns his beliefs and abandons his family for his wife.
+
+    duration: 2h 5m
+    rating: 6.4
+    genre: Horror, Mystery 
+    actors:  Rajneesh Duggal, Adah Sharma
+    releaseDate: 12 September 2008
+
+28. Satya
+    description: This movie is about the grandfather and gangster of Mumbai's underworld. The film depicts the entry of Satya, a boy from a village, into the world of hooliganism, success and end in that world.
+
+    duration: 2h 50m
+    rating: 8.3
+    genre: Action, Action
+    actors: Manoj Bajpayee, Urmila Matondkar, Chakravarty, Paresh Rawal, 
+    releaseDate: 3 July 1998
+
