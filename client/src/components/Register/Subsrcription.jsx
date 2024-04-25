@@ -1,75 +1,64 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import { IoIosCheckmarkCircle } from "react-icons/io";
-import { Link } from 'react-router-dom';
+// import { useSharedState } from '../../Context/SharedStateContext';
+import { useNavigate } from 'react-router-dom';
 
 function Subsrcription() {
 
-    const Subscriptions = [
-        {
-            title: "Premium",
-            quality: "4K + HDR",
-            features: [
-                { monthly_price: 649 },
-                { video_quality: "Best" },
-                { resolution: "4K (Ultra HD) + HDR" },
-                { special: "Included" },
-                { supported_devices: "TV, computer, mobile phone, tablet" },
-                { no_of_devices: 4 },
-                { download_devices: 6 }
-            ],
-        },
-        {
-            title: "Standard",
-            quality: "1080p",
-            features: [
-                { monthly_price: 499 },
-                { video_quality: "Great" },
-                { resolution: "1080 (Full HD)" },
-                { special: null },
-                { supported_devices: "TV, computer, mobile phone, tablet" },
-                { no_of_devices: 2 },
-                { download_devices: 2 }
-            ],
-        },
-        {
-            title: "Basic",
-            quality: "720p",
-            features: [
-                { monthly_price: 199 },
-                { video_quality: "Good" },
-                { resolution: "720p (HD)" },
-                { special: null },
-                { supported_devices: "TV, computer, mobile phone, tablet" },
-                { no_of_devices: 1 },
-                { download_devices: 1 }
-            ],
-        },
-        {
-            title: "Mobile",
-            quality: "480p",
-            features: [
-                { monthly_price: 149 },
-                { video_quality: "Fair" },
-                { resolution: "480p" },
-                { special: null },
-                { supported_devices: "Mobile phone, tablet" },
-                { no_of_devices: 1 },
-                { download_devices: 1 }
-            ]
-        },
-    ]
+    const [Subscriptions, setSubscriptions] = useState([]);
+    const [planSelect, setPlanSelect] = useState();
+
+    const navigate = useNavigate();
+
 
     const [plan, setPlan] = useState(2);
-    const selectPlan = (e, index)=>{
-        console.log(index);
+    const selectPlan = (e, index, id) => {
+        // console.log(index, id);
+        // console.log(planSelect);
         document.getElementById(plan).classList.remove("selected-card");
         document.getElementById(index).classList.add("selected-card");
+        
         setPlan(index);
     }
 
-    useEffect(()=>{
-        document.getElementById(plan).classList.add("selected-card");
+    useEffect(() => {
+        const fetchData = async()=>{
+            try {
+                const response = await fetch("http://localhost:8000/api/v1/basic/get-subscription-plans", {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        authorization: JSON.parse(localStorage.getItem("accessToken")),
+                    },
+                    body: JSON.stringify({}),
+                })
+
+                if(response.status !== 200){
+                    navigate("/");
+                }
+
+                const data = await response.json();
+                const res = data.data;
+                // console.log(res);
+                setSubscriptions(res);
+                setPlanSelect(res[2]._id);
+            } catch (error) {
+                console.log(error);
+            }
+        }
+        fetchData();
+
+        // document.getElementById(plan).classList.add("selected-card");
     }, [])
+
+    // const {setSharedValue} = useSharedState();
+
+    const handleClick = ()=>{
+        // setSharedValue(planSelect);
+        navigate(`/register/payment/${planSelect}`);
+    }   
+
+
 
     return (
         <div className="main">
@@ -78,17 +67,18 @@ function Subsrcription() {
                 <p className="text-3xl font-semibold">Choose the plan that’s right for you</p>
             </div>
             <div className="cards gap-2 flex justify-center flex-wrap mt-6 w-full">
-                {
+                {   
+                    Subscriptions?
                     Subscriptions.map((item, index) => (
-                        <div  data-aos="fade-zoom-in" key={index} id={index} className="sub-card" onClick={(e)=>selectPlan(e, index)}>
+                        <div key={item._id} id={index} className="sub-card" onClick={(e) => selectPlan(e, index, item._id)}>
                             <div className={`sm-card relative card${index + 1}`}>
                                 <p className="text-lg font-bold">{item.title}</p>
                                 <p className="text-xs font-semibold">{item.quality}</p>
                                 {
                                     plan === index
-                                    ?
-                                    <IoIosCheckmarkCircle className="absolute right-2 text-[1.5rem] bottom-2"/>
-                                    :<></>
+                                        ?
+                                        <IoIosCheckmarkCircle className="absolute right-2 text-[1.5rem] bottom-2" />
+                                        : <></>
                                 }
                             </div>
                             <div className="content">
@@ -133,13 +123,15 @@ function Subsrcription() {
                             </div>
                         </div>
                     ))
+                    :
+                    <>Unalbe to load, Please Try again</>
                 }
             </div>
             <div className="py-4 text-sm text-[#616161]">
                 <span>HD (720p), Full HD (1080p), Ultra HD (4K) and HDR availability subject to your internet service and device capabilities. Not all content is available in all resolutions. See our Term of use for more details. Only people who live with you may use your account. Watch on 4 different devices at the same time with Premium, 2 with Standard, and 1 with Basic and Mobile.</span>
             </div>
             <div className="w-full flex justify-center my-4">
-                <Link to=".././3"><button className="bg-brand h-[2.3rem] text-white w-[7rem] rounded-sm hover:bg-brand/80">Next</button></Link>
+                <button onClick={handleClick} className="bg-brand h-[2.3rem] text-white w-[7rem] rounded-sm hover:bg-brand/80">Next</button>
             </div>
         </div>
     )

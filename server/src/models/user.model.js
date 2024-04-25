@@ -10,26 +10,19 @@ const userSchema = new Schema({
       lowercase: true,
       trim: true
    },
-   fullName: {
-      type: String,
-      required: true,
-      lowercase: true,
-      index: true
-   },
-   mobileNumber: {
-      type: String, 
-      required: true,
-      trim: true,
-      unique: true
-   },
    password: {
       type: String,
       required: true,
       trim: true
    },
-   dateOfBirth: {
+   fullName: {
       type: String,
-      required: true
+      lowercase: true,
+      index: true
+   },
+   subscriptionPlan: {
+      type: Schema.Types.ObjectId,
+      ref: "SubscriptionPlan"
    },
    watchHistory: [
       {
@@ -71,7 +64,6 @@ userSchema.methods.generateAccessToken = async function(){
    return jwt.sign(
       {
          _id: this._id,
-         fullName: this.fullName,
          email: this.email
       },
       process.env.ACCESS_TOKEN_SECRET,

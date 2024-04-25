@@ -30,7 +30,7 @@ video{
     duration: 3h 24m
     rating: 8.1
     genre: Action, Adventure
-    actors: Amitabh Bachchan, Dharmendra, Amjad Khan, Hema Malini, Sanjeev Kumar, Jaya Bachchan
+    actors: Amitabh Bachchan, Dharmendra, Hema Malini, Sanjeev Kumar, Jaya Bachchan
     releaseDate: 15 August 1975
 
 3. Dhadkan
@@ -201,7 +201,7 @@ video{
     duration: 2h 20m
     rating: 5.3
     genre: Romance, Comedy
-    actors: Mithun Chakraborty, Jackie Shroff, Kader Khan, Juhi Chawla, Divya Bharti, Shakti Kapoor, Kader Khan
+    actors: Mithun Chakraborty, Jackie Shroff, Kader Khan, Juhi Chawla, Divya Bharti, Shakti Kapoor
     releaseDate: 17 December 1993
 
 22. Ajnabi
@@ -246,7 +246,7 @@ video{
     duration: 2h 25m
     rating: 6.6
     genre: Action, Horror
-    actors: Jasmin Dhunna, Hemant Birje, Sahila Chadha
+    actors: Jasmin Dhunna, Hemant Birje
     releaseDate: 6 May 1988
 
 27. 1920
@@ -264,6 +264,6 @@ video{
     duration: 2h 50m
     rating: 8.3
     genre: Action, Action
-    actors: Manoj Bajpayee, Urmila Matondkar, Chakravarty, Paresh Rawal, 
+    actors: Manoj Bajpayee, Urmila Matondkar, Paresh Rawal, 
     releaseDate: 3 July 1998
 

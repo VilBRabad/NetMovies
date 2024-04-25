@@ -1,10 +1,12 @@
 import React from 'react'
 import languageLogo from "../../images/language.svg";
 import { MdOutlineArrowDropDown } from "react-icons/md";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
-function Navbar() {
+function Navbar({isLogin}) {
+
+    const navigate = useNavigate();
 
     const setLanguage = (val, e)=>{
         const textSpace = document.getElementById("textSpace");
@@ -13,6 +15,15 @@ function Navbar() {
         }
         else{
             textSpace.innerHTML = "हिन्दी"
+        }
+    }
+
+    const clickHandler = ()=>{
+        if(isLogin){
+            navigate("/in");
+        }
+        else{
+            navigate("/sign-in");
         }
     }
 
@@ -31,7 +42,7 @@ function Navbar() {
                         <span className="pl-4 hover:bg-slate-500" onClick={(e) => setLanguage(0, e)}>हिन्दी</span>
                     </div>
                 </div>
-                <div className="bg-brand p-1 px-4 rounded-[4px] cursor-pointer hover:bg-brand/80"><Link to="/sign-in">Sign in </Link></div>
+                <div onClick={clickHandler} className="bg-brand p-1 px-4 rounded-[4px] cursor-pointer hover:bg-brand/80">{isLogin?"Go Home":"Sign in"}</div>
             </div>
         </div>
     )

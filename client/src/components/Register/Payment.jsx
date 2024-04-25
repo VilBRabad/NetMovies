@@ -8,9 +8,42 @@ import phonepe from "../../images/logos/Phone_Pe.svg";
 import googlepay from "../../images/logos/Google_Pay.svg";
 import { FaChevronRight } from "react-icons/fa6";
 import { IoIosLock } from "react-icons/io";
-import { Link } from 'react-router-dom';
+// import { useSharedState } from '../../Context/SharedStateContext';
+import { useNavigate, useParams } from 'react-router-dom';
 
 function Payment() {
+
+    // const {sharedValue} = useSharedState();
+    const {planId} = useParams();
+    const naviget = useNavigate();
+
+    console.log(planId);
+    const HandleMakePayment = async()=>{
+        try {
+            const response = await fetch('http://localhost:8000/api/v1/users/buy-subscription', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    authorization: JSON.parse(localStorage.getItem("accessToken")),
+                },
+                body: JSON.stringify({
+                    _id: planId
+                }),
+            })
+
+            if(response.status === 200){
+                window.alert("You are subscribed successfully");
+                naviget("/in");
+            }
+            else{
+                naviget("/");
+            }
+        } catch (error) {
+            window.alert("Server Error");
+            naviget("/");
+        }
+    }
+
     return (
         <div className="main h-full w-full flex justify-center">
             <div className="pay-card h-[30rem] w-[30rem] mt-10 flex flex-col gap-3 items-center justify-center">
@@ -22,8 +55,8 @@ function Payment() {
                 <p className="text-center text-lg">Your payment is encrypted and you can change your payment method at anytime.</p>
                 <p className="text-lg font-semibold">Secure for peace of mind. Cancel easily online.</p>
                 <div className="w-full">
-                    <Link to=".././success-message">
-                        <div className="flex pay">
+                    {/* <Link to=".././success-message"> */}
+                        <div className="flex pay" onClick={HandleMakePayment}>
                             <span className="text-lg">Credit or Debit Card</span>
                             <div className="flex gap-4">
                                 <img src={visa} alt="" />
@@ -32,9 +65,9 @@ function Payment() {
                             </div>
                             <FaChevronRight />
                         </div>
-                    </Link>
-                    <Link to=".././success-message">
-                        <div className="flex mt-1 pay">
+                    {/* </Link> */}
+                    {/* <Link to=".././success-message"> */}
+                        <div className="flex mt-1 pay" onClick={HandleMakePayment}>
                             <span className="text-lg">UPI AutoPay</span>
                             <div className="flex gap-4">
                                 <img src={bhim} alt="" />
@@ -44,7 +77,7 @@ function Payment() {
                             </div>
                             <FaChevronRight />
                         </div>
-                    </Link>
+                    {/* </Link> */}
                 </div>
             </div>
         </div>

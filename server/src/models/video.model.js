@@ -1,4 +1,4 @@
-import mongoose, {Schema} from "mongoose";
+import mongoose, {Schema, Types} from "mongoose";
 
 const videoSchema = new Schema({
    title: {
@@ -9,6 +9,10 @@ const videoSchema = new Schema({
    description: {
       type: String,
    }, 
+   link: {
+      type: String,
+      required: true,
+   },
    poster: {
       type: String,
       required: true,

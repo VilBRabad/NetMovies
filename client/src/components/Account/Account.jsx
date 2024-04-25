@@ -1,6 +1,42 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
 function Account() {
+
+  const navigate = useNavigate();
+
+  const logoutHandler = async () => {
+    try {
+      const response = await fetch("http://localhost:8000/api/v1/users/logout", {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          authorization: JSON.parse(localStorage.getItem("accessToken")),
+        },
+        body: JSON.stringify({}),
+      })
+      // console.log(response);
+      // const res = await response.json();
+      // console.log(res);
+      if (response.status === 200) {
+        localStorage.removeItem("accessToken");
+        localStorage.removeItem("refreshToken");
+        localStorage.removeItem("user");
+        console.log("Logout Successfully");
+        // window.alert("Logout Successfully");
+        navigate("/");
+      }
+      else {
+        console.log("server error");
+        window.alert("server error1");
+      }
+
+    } catch (error) {
+      window.alert("Server Error");
+      console.log(error);
+    }
+  }
+
   return (
     <div className="h-screen w-screen text-white">
       <div className="mb-24 md:ml-[8rem] flex flex-col max-md:items-center mt-[5rem]">
@@ -27,6 +63,7 @@ function Account() {
               <span className="text-4xl font-bold mr-6">₹ 649</span>
             </div>
           </div>
+          <button onClick={logoutHandler} className="w-[10rem] h-[3rem] bg-slate-500 rounded-md hover:bg-slate-600">Logout</button>
         </div>
       </div>
     </div>

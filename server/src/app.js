@@ -15,7 +15,10 @@ app.use(express.json({limit: "16kb"}));
 
 
 import userRouter from "./routes/user.routes.js";
+import basicRouter from "./routes/basic.routes.js";
 
 app.use("/api/v1/users", userRouter);
+app.use("/api/v1/basic", basicRouter);
+
 
 export {app};

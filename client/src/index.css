@@ -146,6 +146,9 @@
     .pay-card .pay{
         @apply flex items-center justify-between px-6 cursor-pointer border-2 border-gray-500 w-full h-[4rem] rounded-lg;
     }
+    .container{
+        @apply xl:px-[1.5rem];
+    }
 
     .home-nav{
         background: linear-gradient(to top, black, black, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0));
