@@ -37,19 +37,19 @@ A fully Netflix clone website.
 
 
 ## Schema Model:
-![user-data-model](images\user-data-model.png)
+![user-data-model](images/user-data-model.png)
 
 
 
 ## Figma Designs
 1. Landing Page
-![user-data-model](images\Home.png)
+![Landing page](images/Home.png)
 
 2. Home Page
-![user-data-model](images\Movie_home.png)
+![Home Page](images/Movie_home.png)
 
 3. Movie Details
-![user-data-model](images\Movie_details.png)
+![Movie Details](images/Movie_details.png)
 
 4. Movies List
-![user-data-model](images\Movies.png)
+![Movie List](images/Movies.png)
